@@ -7,7 +7,7 @@ import DumberComponent from './components/DumberComponent';
 ReactDOM.render(
   <div>
     <DumbComponent />
-    <DumberComponent handleClick={undefined} />
+    <DumberComponent handleClick={(ev) => ev.target.innerHTML += "!"} />
   </div>,
   document.getElementById('main')
 );
