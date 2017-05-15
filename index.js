@@ -7,9 +7,9 @@ import DumberComponent from './components/DumberComponent';
 ReactDOM.render(
   <div>
     <DumbComponent />
-    <DumberComponent handleClick={undefined} />
+    <DumberComponent handleClick={() => alert("Hello!")} />
   </div>,
   document.getElementById('main')
 );
 
-require('./test/index-test.js'); // leave this in!
+//require('./test/index-test.js'); // leave this in!
