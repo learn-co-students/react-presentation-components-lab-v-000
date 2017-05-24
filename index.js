@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 import DumbComponent from './components/DumbComponent';
 import DumberComponent from './components/DumberComponent';
 
+function handleClick (ev) {
+  alert("I've been clicked!");
+}
+
 ReactDOM.render(
   <div>
     <DumbComponent />
-    <DumberComponent handleClick={undefined} />
+    <DumberComponent handleClick={handleClick} />
   </div>,
   document.getElementById('main')
 );
