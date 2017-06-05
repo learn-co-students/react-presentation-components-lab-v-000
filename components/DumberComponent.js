@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function DumberComponent(props) {
+const DumberComponent = (props) => {
   return (
-    <div onClick={this.props.handleClick}>
+    <div onClick={props.handleClick}>
       I am just happy
     </div>
   )
 }
+
+export default DumberComponent
