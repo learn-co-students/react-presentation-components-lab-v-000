@@ -12,20 +12,14 @@ class SimpleComponent extends React.Component {
 
   handleClick = () =>{
     this.setState({
-      mood: toggleMood()
+      mood: "happy" ? "sad" : "happy"
     })
-  }
-
-  toggleMood = () => {
-    debugger
-    console.log(this.state.mood)
-    this.state.mood === "happy" ? "sad" : "happy"
   }
   
  render(){
 
     return (
-      <div>{this.state.mood}</div>
+      <div onClick={this.handleClick}>{this.state.mood}</div>
     );
     
   }
