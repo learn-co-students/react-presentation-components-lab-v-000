@@ -13,7 +13,7 @@ describe('<SimplerComponent />', () => {
   beforeEach(() => {
     spy = sinon.spy();
     wrapper = !SimplerComponent.prototype ?
-      shallow(<Noop />) : shallow(<SimplerComponent handleClick={spy} />);
+      shallow(<Noop />) : shallow(<SimplerComponent chubchub={spy} />);
   });
 
   it('should be a stateless functional component', () => {
