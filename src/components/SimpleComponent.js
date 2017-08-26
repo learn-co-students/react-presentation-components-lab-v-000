@@ -9,12 +9,16 @@ export default class SimpleComponent extends Component {
     }
   }
 
+  // handleClick = (event) => {
+  //   if (this.state.mood === 'happy') {
+  //     this.setState({ mood: 'sad' });
+  //   } else {
+  //     this.setState({ mood: 'happy' });
+  //   }
+  // }
+
   handleClick = (event) => {
-    if (this.state.mood === 'happy') {
-      this.setState({ mood: 'sad' });
-    } else {
-      this.setState({ mood: 'happy' });
-    }
+    this.setState({ mood: this.state.mood === 'happy' ? 'sad' : 'happy' })
   }
 
   render() {
