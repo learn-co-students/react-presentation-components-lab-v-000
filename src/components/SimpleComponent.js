@@ -16,7 +16,7 @@ class SimpleComponent extends Component {
 
   handleClick = () => {
     this.setState(
-      mood = "sad"
+      props.mood = "sad"
     )
   }
 
