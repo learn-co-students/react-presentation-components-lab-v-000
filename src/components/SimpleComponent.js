@@ -6,18 +6,18 @@ class SimpleComponent extends Component {
     super(props);
  
     this.state = {
-      mood: this.props.mood
+      mood: "happy"
     };
 
 
-  // this.handleClick = this.handleClick.bind(this);
+  this.handleClick = this.handleClick.bind(this);
 
   }
 
   handleClick = () => {
-    this.setState(
-      props.mood = "sad"
-    )
+    this.setState({
+      mood: "sad"
+    })
   }
 
   render() {
