@@ -9,15 +9,14 @@ class SimpleComponent extends Component {
       mood: "happy"
     };
 
-
-  this.handleClick = this.handleClick.bind(this);
+  this.handleClick =   this.handleClick.bind(this);
 
   }
 
+
   handleClick = () => {
-    this.setState({
-      mood: "sad"
-    })
+    const newMood = 'sad';//this.state.mood === 'happy' ? 'sad' : 'happy';
+    this.setState({ mood: newMood });
   }
 
   render() {
