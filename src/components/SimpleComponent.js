@@ -8,23 +8,19 @@ class SimpleComponent extends Component {
     this.state = {
       mood: "happy"
     };
-
-  this.handleClick =   this.handleClick.bind(this);
-
   }
 
 
   handleClick = () => {
-    const newMood = 'sad';//this.state.mood === 'happy' ? 'sad' : 'happy';
+    const newMood = 'sad';
     this.setState({ mood: newMood });
   }
 
   render() {
     return (
-      <div onClick={this.handleClick}>{this.props.mood}</div>
+      <div onClick={this.handleClick}>{this.state.mood}</div>
     )
   }
-
 }
 
 
