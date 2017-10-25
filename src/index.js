@@ -7,7 +7,7 @@ import SimplerComponent from './components/SimplerComponent';
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={(mood) => mood === "happy" ? mood = "sad" : mood = "happy"} />
+    <SimplerComponent handleClick={() => console.log("yah I am")} />
   </div>,
   document.getElementById('root')
 );
