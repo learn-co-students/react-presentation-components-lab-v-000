@@ -5,7 +5,7 @@ export default class SimpleComponent extends React.Component {
       constructor(){
         super();
         this.state = {
-          state: 'happy'
+          mood: 'happy'
         }
       }
 
@@ -15,9 +15,12 @@ export default class SimpleComponent extends React.Component {
         })
       }
 
-        render(
-          <div>
-            <p onClick={this.handleClick}>{this.state.mood} </p>
+      render() {
+        return(
+          <div onClick={this.handleClick}>
+            {this.state.mood}
           </div>
         )
+      }
+
 }
