@@ -8,8 +8,11 @@ class SimpleComponent extends React.Component{
     }
   }
 
-  handleClick = (e) => { this.setState({mood: (e.target.innerText === "happy" ? "sad" : "happy")}) }
-
+  handleClick = () => {
+    const newMood = this.state.mood === 'happy' ? 'sad' : 'happy';
+    this.setState({ mood: newMood });
+  }
+  
   render() {
     return (
       <div onClick={this.handleClick}>
