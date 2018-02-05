@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default class SimpleComponent extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       mood: "happy"
@@ -10,15 +10,10 @@ export default class SimpleComponent extends React.Component {
   }
 
   handleClick = () => {
-    if (this.state.mood === "happy") {
-      this.setState({
-        mood: "sad"
-      })
-    } else {
-      this.setState({
-        mood: "happy"
-      })
-    }
+    const newMood = this.state.mood === 'happy' ? 'sad' : 'happy';
+    this.setState({
+      mood: newMood
+    });
   }
 
   render() {
