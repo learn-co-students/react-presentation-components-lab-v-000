@@ -7,9 +7,15 @@ export default class SimpleComponent extends React.Component {
     this.state = { mood: 'happy' };
   }
 
+  handleChange(event) {
+    this.setState({
+      mood: 'sad'
+    });
+  }
+
   render() {
     return (
-      <div>
+      <div onClick={(event) => this.handleChange(event)}>
         <h1>{this.state.mood}</h1>
       </div>
     );
