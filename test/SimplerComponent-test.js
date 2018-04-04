@@ -28,6 +28,7 @@ describe('<SimplerComponent />', () => {
   });
 
   it('should render a div with text "I am just happy"', () => {
+    console.log(wrapper.text())
     expect(wrapper.find('div').text()).to.match(/I am just happy/);
   });
 
