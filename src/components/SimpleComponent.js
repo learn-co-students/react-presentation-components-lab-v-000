@@ -13,10 +13,8 @@ export default class SimpleComponent extends Component{
 
   render(){
     return (
-      <div>
-      <a href="#" onClick={this.handleClick}>
+      <div onClick={this.handleClick}>
         {this.state.mood}
-      </a>
       </div>
     )
   }
