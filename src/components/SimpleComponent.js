@@ -1,1 +1,26 @@
-// Code SimpleComponentHere Here
+import React from 'react'
+
+class SimpleComponent extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      mood: 'happy'
+    }
+  }
+
+  handleClick = () => {
+    this.state.mood === "happy" ? this.setState({mood: 'sad'}): this.setState({mood: 'happy'})
+    
+  }
+
+  render(){
+    return(
+      <div onClick={this.handleClick}
+           style={{border: "1px solid black"}}>
+        {this.state.mood}
+      </div>
+    )  
+  }
+}
+
+export default SimpleComponent
