@@ -3,12 +3,13 @@ import React from 'react';
 class SimpleComponent extends React.Component {
   constructor() {
     super()
+
     this.state = {
       mood: "happy"
     }
   }
 
-  handleClick = e => {
+  handleClick = () => {
      (this.state.mood = 'happy') ? this.setState({ mood: "sad"}) : this.setState({ mood: "happy"})
 
   }
@@ -20,4 +21,4 @@ class SimpleComponent extends React.Component {
   }
 }
 
-export default SimpleComponent
+export default SimpleComponent;
