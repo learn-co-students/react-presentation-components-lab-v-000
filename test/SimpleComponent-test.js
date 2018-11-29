@@ -38,7 +38,7 @@ describe('<SimpleComponent />', () => {
   });
 
   it('when clicked the div should toggle the state to "sad"', () => {
-    wrapper.find('div').simulate('click', { currentTarget: "happy"});
+    wrapper.find('div').simulate('click', { currentTarget: {innerText: "happy"});
     expect(wrapper.state().mood).to.equal(
       'sad',
       'Mood state not "sad" after click.'
@@ -46,7 +46,7 @@ describe('<SimpleComponent />', () => {
   });
 
   it('after click, "sad" state should be accurately rendered', () => {
-    wrapper.find('div').simulate('click', { currentTarget: "happy"});
+    wrapper.find('div').simulate('click', { currentTarget: {innerText: "happy"});
     expect(wrapper.find('div').text()).to.equal(
       'sad',
       'Mood state incorrectly rendered after click.'
