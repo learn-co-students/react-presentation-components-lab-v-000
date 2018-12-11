@@ -5,7 +5,7 @@ import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
 function handleClick() {
-  alert("I'm always happy!");
+  alert("I'm always happy!!");
 }
 
 ReactDOM.render(
