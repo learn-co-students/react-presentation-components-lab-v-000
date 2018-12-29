@@ -7,8 +7,9 @@ export default class SimpleComponent extends Component {
   }
 
   handleClick = event => {
+    const newMood = this.state.mood === "happy"? "sad" : "happy"
     this.setState({
-      mood: "sad"
+      mood: newMood
     })
   }
 
