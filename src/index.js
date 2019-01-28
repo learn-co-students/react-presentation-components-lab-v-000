@@ -7,7 +7,7 @@ import SimplerComponent from './components/SimplerComponent';
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={() => alert('I am stable and predictable because as a stateless functional component, I CANNOT change my output internally!')} />
   </div>,
   document.getElementById('root')
 );
