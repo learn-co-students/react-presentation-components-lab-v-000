@@ -8,7 +8,13 @@ ReactDOM.render(
   <div>
     <SimpleComponent />
     <SimplerComponent handleClick={
-        (event) => event.target.innerText === "I am just happy" ? event.target.innerText = "I'm really sad" : event.target.innerText = "I am just happy" }/>
+        (event) => {
+          const newText = event.target.innerText === "I am just happy" ?
+          "I'm really sad" : "I am just happy"
+
+          event.target.innerText = newText
+        }
+      }/>
   </div>,
   document.getElementById('root')
 )
