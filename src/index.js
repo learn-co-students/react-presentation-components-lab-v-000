@@ -8,6 +8,7 @@ ReactDOM.render(
   <div>
     <SimpleComponent />
     <SimplerComponent handleClick={undefined} />
+    {/* <SimplerComponent handleClick={console.log("Hellooooo...")} /> */}
   </div>,
   document.getElementById('root')
 );
