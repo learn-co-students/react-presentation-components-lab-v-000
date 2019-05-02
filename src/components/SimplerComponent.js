@@ -1,11 +1,9 @@
-// Code SimplerComponent Here
+// // Code SimplerComponent Here
 
 import React from 'react'
+// // import { deflate } from 'zlib';
 
-const SimplerComponent = (props) =>
-  <div onChange={this.props.onChange} > I am just happy</div>
+const SimplerComponent = props => <div onClick={props.handleClick} > I am just happy</div>
 
 
-// It should receive one property called handleClick that
-// performs some sort of action in
-// response to a click — your choice!
+export default SimplerComponent;
