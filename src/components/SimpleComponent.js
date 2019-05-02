@@ -22,5 +22,5 @@ class SimpleComponent extends React.Component {
   
 }
 
-export default SimpleComponents
+export default SimpleComponent
 
