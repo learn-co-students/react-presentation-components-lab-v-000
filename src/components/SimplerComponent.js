@@ -7,4 +7,7 @@ const SimplerComponent = props => {
     )
 }
 
+//can also do on 1 line:
+//const SimplerComponent = props => <div onClick={props.handleClick}>I am just happy"</div>
+
 export default SimplerComponent
