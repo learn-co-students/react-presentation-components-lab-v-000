@@ -9,8 +9,6 @@ export default class SimpleComponent extends Component {
 		}
 	}
 
-	//AAQ why do i need to pass props here when there are apparently no props?
-
 	handleClick = () => {
 		this.setState({
 			mood: 'sad'}
