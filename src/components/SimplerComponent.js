@@ -1,11 +1,13 @@
 import React from 'react'
 
-const SimplerComponent = (props) => {
-    return ( 
-    	<div onclick={ props.handleClick }>
-				"I am just not happy"
-			</div>
-		)
+const SimplerComponent = props => {
+
+	
+	return (
+		<div onclick={ props.handleClick } className={'change-color'}>
+			I am just happy
+		</div>
+	)
 }
 
 export default SimplerComponent
