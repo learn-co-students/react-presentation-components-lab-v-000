@@ -4,7 +4,7 @@ const SimplerComponent = props => {
 
 	
 	return (
-		<div onclick={ props.handleClick } className={'change-color'}>
+		<div onClick={ props.handleClick() } className={'change-color'}>
 			I am just happy
 		</div>
 	)
