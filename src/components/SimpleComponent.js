@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 
 export default class SimpleComponent extends React.Component {
 
-  onstructor(props) {
+  constructor(props) {
     super(props);
 
     this.state = {
-      mood: 'happy'
+      mood: "happy"
     };
   }
 
@@ -24,6 +24,6 @@ export default class SimpleComponent extends React.Component {
   }
 
   render() {
-   return <div onClick={this.handleClick}> {this.state.mood}</div>
+   return <div onClick={this.handleClick}>{this.state.mood}</div>
   }
 }
