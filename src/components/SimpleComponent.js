@@ -5,15 +5,19 @@ class SimpleComponent extends Component {
     super(props);
 
     // Initial State here..
-    this.state = { mood: "I am just happy" };
+    this.state = { mood: "happy" };
   }
 
+  handleClick = () => {
+    if (this.state.mood === "happy") {
+      this.setState({ mood: "sad" });
+    } else {
+      this.setState({ mood: "happy" });
+    }
+  };
+
   render() {
-    return (
-      <div>
-        <h3>{this.state.mood}</h3>
-      </div>
-    );
+    return <div onClick={this.handleClick}>{this.state.mood}</div>;
   }
 }
 
