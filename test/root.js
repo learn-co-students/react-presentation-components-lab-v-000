@@ -14,4 +14,5 @@ Object.keys(document.defaultView).forEach((property) => {
 
 global.navigator = {
   userAgent: 'node.js'
+
 };
