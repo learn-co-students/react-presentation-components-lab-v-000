@@ -8,6 +8,5 @@ ReactDOM.render(
   <div>
     <SimpleComponent />
     <SimplerComponent handleClick={undefined} />
-  </div>,
-  document.getElementById('root')
+  </div>,document.getElementById('root')
 );
