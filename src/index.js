@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
+const realFeelings = event => {
+  console.log("or am I?")
+}
+
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={realFeelings} />
   </div>,
   document.getElementById('root')
 );
