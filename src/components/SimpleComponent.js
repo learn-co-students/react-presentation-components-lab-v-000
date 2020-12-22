@@ -7,7 +7,6 @@ class SimpleComponent extends Component {
   }
 
   handleClick = () => {
-    // TODO:
     this.state.mood = "happy" ? ( this.setState({mood: "sad"}) ) : ( this.setState({mood: "happy"}) );
   }
 
