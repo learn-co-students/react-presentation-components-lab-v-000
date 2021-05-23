@@ -1,7 +1,7 @@
 // Code SimpleComponent Here
-import React, {Component} from 'react'
+import React from 'react'
 
-class SimpleComponent extends Component{
+class SimpleComponent extends React.Component{
     state={
         mood:"happy"
     }
